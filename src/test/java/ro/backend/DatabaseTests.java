@@ -1,20 +1,11 @@
 package ro.backend;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import ro.backend.model.dao.ProductCategoryDao;
-import ro.backend.model.dao.ProductDao;
-import ro.backend.model.dao.UserDao;
-import ro.backend.model.tables.Product;
-import ro.backend.model.tables.ProductCategory;
-import ro.backend.model.tables.User;
 
 @SpringBootTest
 class DatabaseTests {
 
-    @Autowired
+/*    @Autowired
     private UserDao userDao;
     @Autowired
     private ProductCategoryDao productCategoryDao;
@@ -54,5 +45,5 @@ class DatabaseTests {
 
         product = productDao.save(product);
 
-    }
+    }*/
 }

@@ -2,8 +2,10 @@ package ro.backend.model.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import ro.backend.model.dao.ProductCategoryDao;
-import ro.backend.model.dao.ProductDao;
+import ro.backend.model.tables.Product;
+import ro.backend.model.tables.ProductCategory;
+
+import java.util.List;
 
 @Repository
 public class ProductRepository {
@@ -16,5 +18,11 @@ public class ProductRepository {
         this.productDao = productDao;
     }
 
+    public List<Product> getAllProducts(){
+        return productDao.findAll();
+    }
 
+    public List<ProductCategory> getAllProductCategories(){
+        return productCategoryDao.findAll();
+    }
 }

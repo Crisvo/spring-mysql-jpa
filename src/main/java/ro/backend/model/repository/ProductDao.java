@@ -1,9 +1,9 @@
-package ro.backend.model.dao;
+package ro.backend.model.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import ro.backend.model.tables.Product;
 
 @Repository
-public interface ProductDao extends JpaRepository<Product, Long> {
+interface ProductDao extends JpaRepository<Product, Long> {
 }
